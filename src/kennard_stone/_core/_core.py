@@ -269,7 +269,7 @@ def train_test_split(
         chain.from_iterable(
             (_safe_indexing(a, train), _safe_indexing(a, test)) for a in arrays
         )
-    )
+    ), (train, test)
 
 
 class _KennardStone:
